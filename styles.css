@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-image: url('/assets/images/background-pattern-desktop.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: hsl(275, 100%, 97%);
+    font-family: Work Sans;
+}
+h1, h2 {
+    color: hsl(292, 42%, 14%);
+    margin: 0;
+}
+.show {
+    height: 100% !important;
+    transition: all 0.3s ease !important;
+}
+.wrapper {
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+.inner-wrapper {
+    max-width: 600px;
+    background: hsl(0, 100%, 100%);
+    padding: 40px 40px 0;
+    border-radius: 15px;
+    height: 480px;
+}
+.header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.header img {
+    margin-right: 20px;
+}
+.header h1 {
+    font-size: 50px;
+    font-weight: 700;
+}
+.questions {
+    padding: 10px 0;
+}
+.question {
+    border-bottom: 2px solid hsl(275, 100%, 97%);
+    height: 71px;
+    overflow: hidden;
+}
+.question:last-child {
+    border-bottom: none;
+}
+.title {
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    height: 71px;
+}
+.title h2:hover {
+    color: #AD28EB;
+}
+.title h2 {
+    font-size: 16px;
+    font-weight: 700;
+    transition: all 0.3s ease;
+}
+.title img {
+    margin-left: 20px;
+}
+.answer {
+    font-size: 14px;
+    font-weight: 500;
+    color:hsl(292, 16%, 49%);
+    line-height: 1.5;
+    padding-bottom: 20px;
+}
+@media screen and (max-width: 767px) {
+body {
+    background-image: url('/assets/images/background-pattern-mobile.svg');
+}
+.wrapper {
+    padding: 20px;
+}
+.inner-wrapper {
+    max-width: 350px;
+    padding: 20px 20px 0;
+    border-radius: 10px;
+    height: max-content;
+}
+.header img {
+    width: 25px;
+    margin-right: 25px;
+}
+.header h1 {
+    font-size: 35px;
+}
+.question {
+    height: 75px;
+}
+.title {
+    height: 75px;
+    padding: 15px 0;
+}
+.title h2 {
+    font-size: 14px;
+}
+.answer {
+    font-size: 12px;
+    padding-bottom: 15px;
+}
+}
