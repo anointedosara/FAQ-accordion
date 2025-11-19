@@ -25,10 +25,10 @@ const data = [
 data.forEach(item => {
   questions.innerHTML += `
     <div class="question">
-      <div class="title">
+      <button class="title">
         <h2>${item.question}</h2>
         <img src="/assets/images/icon-plus.svg" alt="">
-      </div>
+      </button>
       <div class="answer">${item.answer}</div>
     </div>
   `;

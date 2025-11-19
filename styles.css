@@ -27,6 +27,7 @@ h1, h2 {
     align-items: center;
     justify-content: center;
     height: 100%;
+    flex-direction: column;
 }
 .inner-wrapper {
     max-width: 600px;
@@ -60,11 +61,15 @@ h1, h2 {
 }
 .title {
     padding: 20px 0;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     cursor: pointer;
     height: 71px;
+    background: none;
+    border: none;
+    text-align: left;
 }
 .title h2:hover {
     color: #AD28EB;
